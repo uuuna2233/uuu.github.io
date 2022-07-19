@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Splunk on Una&#39;s Portfolio</title>
+    <link>https://uuuna2233.github.io/tags/splunk/</link>
+    <description>Recent content in Splunk on Una&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 12 May 2022 20:00:00 +0800</lastBuildDate><atom:link href="https://uuuna2233.github.io/tags/splunk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Splunk 集中化監控不同主機事件</title>
+      <link>https://uuuna2233.github.io/blog/post-4/</link>
+      <pubDate>Thu, 12 May 2022 20:00:00 +0800</pubDate>
+      
+      <guid>https://uuuna2233.github.io/blog/post-4/</guid>
+      <description>Splunk 基於 MapReduce 分散式架構來處理大量資料，可收集、索引、分析各種來源（如：應用程序、伺服器和設備）生成的實時和歷史數據，且所存取的資料無需正規化（normalize）處理
+於 Linux 安裝 Splunk Reference：Splunk Installation Manual</description>
+    </item>
+    
+  </channel>
+</rss>

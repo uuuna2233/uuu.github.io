@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Una&#39;s Portfolio</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="透過爬蟲技術提取網路資訊，並將其轉換成可理解的結構，進行網路資料探勘（Data Mining）">
+  <meta name="author" content="Una">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://uuuna2233.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://uuuna2233.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://uuuna2233.github.io"><img class="img-fluid"
+          src="https://uuuna2233.github.io/images/logo.png" alt="Una&#39;s Portfolio">
+        <p class="text-body">Una&#39;s Portfolio</p></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/uuuna2233"></a>
+            </li>
+            
+          </ul>
+        </div>
+        <a class="navbar-brand me-auto desktop-view" href="https://uuuna2233.github.io"><img class="img-fluid"
+            src="https://uuuna2233.github.io/images/logo.png" alt="Una&#39;s Portfolio">
+            <p class="text-body">Una&#39;s Portfolio</p></a>
+        <ul class="navbar-nav ml-auto">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://uuuna2233.github.io/about/">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://uuuna2233.github.io/blog/">Blog</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://uuuna2233.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        
+        <a href="/categories/post"
+          class="text-primary">Post</a>
+        
+        <h2>Python 網頁爬蟲 (Web Crawler) 實踐</h2>
+        <div class="mb-3 post-meta">
+          <span>By Una</span>
+          
+          <span class="border-bottom border-primary px-2 mx-0"></span>
+          <span>25 April 2022</span>
+          
+        </div>
+        
+        <img src="https://uuuna2233.github.io/images/post/post-3.png" class="img-fluid w-100 mb-4" alt="Python 網頁爬蟲 (Web Crawler) 實踐">
+        
+        <div class="content mb-5">
+          <p>Photo by <a href="https://bridgera.com/the-iot-tsunami-are-your-apps-ready/">Bridgera</a></p>
+<!-- raw HTML omitted -->
+<p>● 靜態網頁爬蟲：client 向 server 發出 request，server 將網頁文件返回 response，瀏覽器解讀 HTML 並顯示結果，使用單純的 requests 函式庫即可爬取資料</p>
+<p>● 動態網頁爬蟲：client 向 server 發出 request，server 到 Database 存取資料並返回 response，使用 Selenium 套件模擬瀏覽器擷取資料</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h4 id="透過-api-application-programming-interface-實踐">透過 API (Application Programming Interface) 實踐</h4>
+</li>
+</ul>
+<hr>
+<!-- raw HTML omitted -->
+<p>Web API 的資料傳輸格式多為 JSON 與 XML，格式漂亮的 JSON 檔可直接使用，而 XML 則需以 BeautifulSoup、lxml 完成解析</p>
+<!-- raw HTML omitted -->
+<p>範例：<code>OMDb API</code>為開放的電影數據庫，基於 RESTful 架構的服務，用於獲取電影訊息</p>
+<!-- raw HTML omitted -->
+<p><img src="../../images/post/post-3-Code1.png" alt="OMDb API">
+<img src="../../images/post/post-3-Code2.png" alt="OMDb API"></p>
+<!-- raw HTML omitted -->
+<p>範例：<code>民報</code>、<code>鉅亨網</code>、<code>自由時報</code>、<code>104薪資情報</code> 等皆可透過開發者工具查看 Network，解析其 API 的參數規律</p>
+<!-- raw HTML omitted -->
+<h5 id="使用-get-的方式">使用 GET 的方式</h5>
+<p><img src="../../images/post/post-3-Code3.png" alt="鉅亨網"></p>
+<h5 id="使用-post-的方式">使用 POST 的方式</h5>
+<p><img src="../../images/post/post-3-Code4.png" alt="104薪資情報"></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h4 id="靜態網頁爬取">靜態網頁爬取</h4>
+</li>
+</ul>
+<hr>
+<!-- raw HTML omitted -->
+<p>與透過 API 爬取方式類似，只是 API 是網站工程師包好特定資料返回，自己以 requests 送出請求是返回整個網頁內容，需再進一步解析 HTML 結構並對其標籤定位</p>
+<p>範例：<code>PTT</code>、<code>TechNews</code>、<code>奇摩股市</code>、<code>中國時報</code> 等皆可透過開發者工具查看 Elements，解析其 HTML 結構</p>
+<p><img src="../../images/post/post-3-Code5.png" alt="PTT NBA版"></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h4 id="動態網頁爬取">動態網頁爬取</h4>
+</li>
+</ul>
+<hr>
+<!-- raw HTML omitted -->
+<p>網頁以滾動捲軸或點擊特殊按鍵來動態載入更多的資料，此時就需以 Selenium 套件，模仿人類行為處理網頁操作</p>
+<p>範例：<code>104人力銀行</code> 職缺搜尋，捲軸滑到最底部會自動載入下一頁，第 16 頁後則需手動點擊載入</p>
+<p><img src="../../images/post/post-3-Code6.png" alt="104">
+<img src="../../images/post/post-3-Code7.png" alt="104"></p>
+<p><strong>更新</strong>：DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead. 訊息指出 find_element_by_* 命令已被棄用，driver.find_element(By.CLASS_NAME, &ldquo;XXXXX&rdquo;)</p>
+<p><strong>Reference</strong>：<a href="https://selenium-python.readthedocs.io/locating-elements.html">Selenium Locating Elements</a></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>完整程式碼請至 <a href="https://github.com/uuuna2233/python_crawler">Github</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      
+               
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Taiwan</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:uuuna2233@email.com"><i
+                class="ti-email mr-3 text-primary"></i>uuuna2233@email.com</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/uuuna2233">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/post/">Post</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/project/">Project</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://uuuna2233.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://uuuna2233.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/search/mark.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://uuuna2233.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
