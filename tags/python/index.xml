@@ -6,31 +6,41 @@
     <description>Recent content in Python on Una&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 24 Jun 2022 22:00:00 +0800</lastBuildDate><atom:link href="https://uuuna2233.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jul 2022 22:00:00 +0800</lastBuildDate><atom:link href="https://uuuna2233.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB 存取全台空氣品質指標 Part 1</title>
+      <link>https://uuuna2233.github.io/blog/mongodb-in-python/</link>
+      <pubDate>Sat, 23 Jul 2022 22:00:00 +0800</pubDate>
+      
+      <guid>https://uuuna2233.github.io/blog/mongodb-in-python/</guid>
+      <description>● 非關聯式資料庫 (NoSQL)
+MongoDB 是文件導向式資料庫，儲存由 key-value 配對而成的資料，無需事先定義資料型態，對於不同表徵的資料，都能快速存進資料庫</description>
+    </item>
+    
     <item>
       <title>大數據相關職缺分析專題 Part 2</title>
-      <link>https://uuuna2233.github.io/blog/post-2/</link>
+      <link>https://uuuna2233.github.io/blog/bigdata-job-part2/</link>
       <pubDate>Fri, 24 Jun 2022 22:00:00 +0800</pubDate>
       
-      <guid>https://uuuna2233.github.io/blog/post-2/</guid>
+      <guid>https://uuuna2233.github.io/blog/bigdata-job-part2/</guid>
       <description>員工的離職原因林林總總，只有兩點最真實：1 錢，沒給到位 2 心，委屈了</description>
     </item>
     
     <item>
       <title>大數據相關職缺分析專題 Part 1</title>
-      <link>https://uuuna2233.github.io/blog/post-1/</link>
+      <link>https://uuuna2233.github.io/blog/bigdata-job-part1/</link>
       <pubDate>Fri, 24 Jun 2022 20:00:00 +0800</pubDate>
       
-      <guid>https://uuuna2233.github.io/blog/post-1/</guid>
+      <guid>https://uuuna2233.github.io/blog/bigdata-job-part1/</guid>
       <description>員工的離職原因林林總總，只有兩點最真實：1 錢，沒給到位 2 心，委屈了</description>
     </item>
     
     <item>
       <title>Python 網頁爬蟲 (Web Crawler) 實踐</title>
-      <link>https://uuuna2233.github.io/blog/post-3/</link>
+      <link>https://uuuna2233.github.io/blog/web-crawling-in-python/</link>
       <pubDate>Mon, 25 Apr 2022 19:30:00 +0800</pubDate>
       
-      <guid>https://uuuna2233.github.io/blog/post-3/</guid>
+      <guid>https://uuuna2233.github.io/blog/web-crawling-in-python/</guid>
       <description>Photo by Bridgera
 ● 靜態網頁爬蟲：client 向 server 發出 request，server 將網頁文件返回 response，瀏覽器解讀 HTML 並顯示結果，使用單純的 requests 函式庫即可爬取資料</description>
     </item>
