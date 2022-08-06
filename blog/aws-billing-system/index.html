@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Una&#39;s Portfolio</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="針對企業需求設計雲端服務與資料庫架構，並撰寫 SQL 語法供前後端串接">
+  <meta name="author" content="Una">
+  <meta name="generator" content="Hugo 0.101.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://uuuna2233.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://uuuna2233.github.io/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://uuuna2233.github.io/images/favicon.png " type="image/x-icon">
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-234932744-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCTYL1G30F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WCTYL1G30F');
+  </script>
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://uuuna2233.github.io"><img class="img-fluid"
+          src="https://uuuna2233.github.io/images/logo.png" alt="Una&#39;s Portfolio">
+        <p class="text-body">Una&#39;s Portfolio</p></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/uuuna2233"></a>
+            </li>
+            
+          </ul>
+        </div>
+        <a class="navbar-brand me-auto desktop-view" href="https://uuuna2233.github.io"><img class="img-fluid"
+            src="https://uuuna2233.github.io/images/logo.png" alt="Una&#39;s Portfolio">
+            <p class="text-body">Una&#39;s Portfolio</p></a>
+        <ul class="navbar-nav ml-auto">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://uuuna2233.github.io/about/">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://uuuna2233.github.io/blog/">Blog</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://uuuna2233.github.io/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+        
+        <a href="/categories/project"
+          class="text-primary">Project</a>
+        
+        <h2>於 AWS 雲端平台搭建會員帳務系統</h2>
+        <div class="mb-3 post-meta">
+          
+          
+          <span class="border-bottom border-primary px-2 mx-0"></span>
+          <span>04 August 2022</span>
+          
+        </div>
+        
+        <img src="https://uuuna2233.github.io/images/post/post-6-Diagram-develop.jpg" class="img-fluid w-100 mb-4" alt="於 AWS 雲端平台搭建會員帳務系統">
+        
+        <div class="content mb-5">
+          <!-- raw HTML omitted -->
+<h4 id="業務場景">業務場景</h4>
+<hr>
+<!-- raw HTML omitted -->
+<p>AWS 擁有複雜度超高的計費方式，帳單報告多達 <strong>150</strong> 個欄位，不同的雲服務、產品規格、用量狀況、計價模式、生效時間等等讓人眼花撩亂 (◎.◎)<br>
+此次專案目標為協助雲端平台服務商從無到有建立會員帳務系統，讓 <strong>客戶可以清楚地找到關注的訊息</strong> (ex 每日成本用量，折扣使用狀況)，也讓企業能動態更新帳務，將此業務計算自動化，減少在此投入的人工，進而 <strong>專注於雲端整合服務的本業上</strong></p>
+<!-- raw HTML omitted -->
+<h4 id="雲端架構">雲端架構</h4>
+<hr>
+<!-- raw HTML omitted -->
+<p>●  <strong>CUR</strong>：內含最完整的 AWS 成本和用量數據，依產品代碼、項目類型、使用時間逐項列出帳戶或組織層級的用量<br>
+●  <strong>S3</strong>：CUR 會向 S3 bucket 提交以小時細分的帳務報告，每天更新一次，於次月第 7 日提供最終報告<br>
+●  <strong>Lambda</strong>：以 trigger 接收 S3 Event，當有新帳單存入 S3，即啟動相對應的 Funtion，對帳單做一系列的處理並存入 DB<br>
+●  <strong>CloudWatch</strong>：監控 Lambda Funtion 運行狀況，並為 LOG 設定警示條件，在異常時透過 Alarm 通知 Admin<br>
+●  <strong>MySQL</strong> - 開發階段在 EC2 自建 DB 以節省成本，正式上線可考量採用 AWS RDS 服務建立 MySQL<br>
+●  <strong>Elastic IP</strong>：為針對動態雲端運算設計的靜態 IPv4 地址，關聯至指定的 EC2，公有 IP 即不會異動<br>
+●  <strong>VPC</strong>：為快速進行開發，目前配有一個 Public Subnet，正式上線需將服務拆分不同 Instance 並置於 Private Subnet</p>
+<ul>
+<li>
+<h5 id="如何查看最新報告">如何查看最新報告?</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>S3 可以找到 Manifest.json 檔案，清單紀錄了報告的架構，reportKeys 為最新報告文件的 S3 文件路徑</p>
+<p><img src="../../images/post/post-6-billing1.png" alt="Manifest report"></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h5 id="如何確定最終報告">如何確定最終報告?</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>如果是最終版，bill/InvoiceId 會填入 &lsquo;AWS invoice ID&rsquo;，bill/BillType 則填入 &lsquo;Anniversary&rsquo;
+<img src="../../images/post/post-6-billing2.png" alt="Finalized report"></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h5 id="清洗入庫效能比較">清洗入庫效能比較</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>因業務需求，帳單需拆分為 Table billing_1、Table billing_2<br>
+先判斷 A 欄位的類型，再判斷 B 欄位和 C 欄位一致與否</p>
+<p>●  <strong>Option 1</strong>：使用迴圈讀取並逐條判斷，處理效能低落，每秒約處理 2 列，需耗時 21 小時<br>
+●  <strong>Option 2</strong>：使用 dataframe 一次處理，處理效能明顯優於前者，15 萬條數據 10 秒內完成入庫</p>
+<p><img src="../../images/post/post-6-Code1.png" alt="帳單清洗"></p>
+<!-- raw HTML omitted -->
+<h4 id="資料庫架構">資料庫架構</h4>
+<hr>
+<!-- raw HTML omitted -->
+<p>設計完整的資料庫系統，要考量的細節很多，圍繞在以下列舉的考量，皆非常考驗著業務理解和熟悉資料庫背後工作原理&hellip;</p>
+<ol>
+<li><strong>應用業務的需求上</strong>： ex 客戶關心什麼內容 / 前端頁面呈現邏輯 / 模擬內部作業流程（如：團隊在 Key in 客戶訊息、折扣等內容時夠不夠直覺好用）</li>
+<li><strong>資料庫效能與容量</strong>： ex 前端如何透過 API 向後端請求資料 / 資料存取類型與編碼 / 索引、外鍵如何設計 / 應累加或定期更新哪些資訊</li>
+<li><strong>後續維護和需求延展</strong>：ex 使用者的權限管理 / 應依照客戶或是週期分庫分表 / 未來業務變化需更動表格配置時夠不夠彈性</li>
+</ol>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h5 id="資料庫正規化-normalization">資料庫正規化 (Normalization)</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ol>
+<li><strong>第一正規化 (1NF)</strong>：每個欄位只能有一個基元值 (Atomic)，表中有主鍵，而其它欄位都相依於主鍵\</li>
+<li><strong>第二正規化 (2NF)</strong>：每個非鍵屬性必須「完全相依」於主鍵，亦即將「部分功能相依」的欄位分割，再另外組成新 Table\</li>
+<li><strong>第三正規化 (3NF)</strong>：各欄位與主鍵之間沒有「遞移相依」的關係，亦即將「遞移相依」的欄位分割，再另外組成新 Table</li>
+</ol>
+<p>AWS 原始帳單已符合每個欄位僅有單一值，將 identity/LineItemId 和 identity/TimeInterval 當作聯合主鍵，product/sku 為產品的獨特代碼，可以此欄為作為另一張表的主鍵，利用「外鍵」來連接主表</p>
+<ul>
+<li>
+<h5 id="事件排程器-event-scheduler">事件排程器 (Event Scheduler)</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code>delimiter $$
+CREATE
+    [DEFINER = user]
+    EVENT
+    [IF NOT EXISTS]
+    event_name
+    ON SCHEDULE schedule
+    [ON COMPLETION [NOT] PRESERVE]
+    [ENABLE | DISABLE | DISABLE ON SLAVE]
+    [COMMENT &#39;string&#39;]
+    DO event_body;
+    end $$
+delimiter;
+
+schedule: {
+    AT timestamp [+ INTERVAL interval] ...
+  | EVERY interval
+    [STARTS timestamp [+ INTERVAL interval] ...]
+    [ENDS timestamp [+ INTERVAL interval] ...]
+}
+
+interval:
+    quantity {YEAR | QUARTER | MONTH | DAY | HOUR | MINUTE |
+              WEEK | SECOND | YEAR_MONTH | DAY_HOUR | DAY_MINUTE |
+              DAY_SECOND | HOUR_MINUTE | HOUR_SECOND | MINUTE_SECOND}
+</code></pre><pre tabindex="0"><code>SET GLOBAL event_scheduler = ON;
+</code></pre><p>identity/LineItemId 項目可能會依照不同的報告時間改變，因此需每日以新報告覆蓋原表格<br>
+而以此表格延伸出的數張報表亦需每日更新，即需啟用 SQL 排程來完成
+<img src="../../images/post/post-6-billing3.png" alt="primary key"></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h5 id="設計索引外鍵-indexforeign-key">設計索引、外鍵 (Index、Foreign Key)</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>適當的索引可以加快數據訪問，提高查詢效能；而外鍵的約束用於防止非法數據插入，更新、刪除時也能保持表格一致性</p>
+<p>前端經常返回的變數為 &lsquo;business_tax&rsquo;，即經常使用 &lsquo;business_tax&rsquo; 執行條件判斷，即能為它建立索引<br>
+若發現 query 速度很慢，在 query 敘述前使用 <strong>EXPLAIN</strong>，可以解析查詢狀況，進而調優 SQL 語法</p>
+<p><img src="../../images/post/post-6-billing4.png" alt="EXPLAIN"></p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<h5 id="多階層子查詢結合查詢-subqueryjoin">多階層子查詢、結合查詢 (Subquery、Join)</h5>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>查詢如何撰寫會大幅度的影響效能，尤其在複雜的巢狀子查詢、多次結合查詢</p>
+<p>比如需求 JOIN 4 張表，是要 A JOIN B 後，再 JOIN C，最後 JOIN D，或者 A JOIN B、C JOIN D，再 JOIN 前述兩表&hellip;<br>
+該 WHERE A.ID 或者  WHERE B.ID，是否使用了暫時表格 (Temporary Table)&hellip;</p>
+<p><img src="../../images/post/post-6-billing5.png" alt="Temporary Table"></p>
+<!-- raw HTML omitted -->
+<p>資料庫是大數據從業人員必備技能，雖入門容易，但學習曲線到某一程度會大幅趨緩，需投入更多時間才能成長，關注的點也不僅在於「查詢的出正確結果」就好，未來得持續精進如災難復原、日誌監控、Cluster配置、SQL injection&hellip;等知識</p>
+<!-- raw HTML omitted -->
+<p><strong>Reference</strong>：<br>
+1. <a href="https://docs.aws.amazon.com/cur/latest/userguide/data-dictionary.html">AWS Data dictionary</a><br>
+2. <a href="http://cc.cust.edu.tw/~ccchen/doc/db_04.pdf">MySQL Normalization</a><br>
+3. <a href="https://dev.mysql.com/doc/refman/8.0/en/event-scheduler.html">MySQL Event Scheduler</a></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="text-capitalize">
+  <div class="container">
+    <div class="row justify-content-center">
+      
+               
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          
+                     
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Taiwan</li>
+          
+                     
+          <li class="mb-3"><a class="text-dark" href="mailto:unaliao06@email.com"><i
+                class="ti-email mr-3 text-primary"></i>unaliao06@email.com</a>
+          
+          </li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/uuuna2233">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/post/">Post</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/project/">Project</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://uuuna2233.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://uuuna2233.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/search/mark.js"></script>
+
+<script src="https://uuuna2233.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://uuuna2233.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
