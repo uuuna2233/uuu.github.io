@@ -8,6 +8,15 @@
     <language>zh-tw</language>
     <lastBuildDate>Sun, 10 Jul 2022 22:00:00 +0800</lastBuildDate><atom:link href="https://uuuna2233.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Minecraft 麥塊競賽 Log 解析</title>
+      <link>https://uuuna2233.github.io/blog/minecraft-log/</link>
+      <pubDate>Sat, 20 Aug 2022 20:00:00 +0800</pubDate>
+      
+      <guid>https://uuuna2233.github.io/blog/minecraft-log/</guid>
+      <description>專案目標 透過 Google Sheets API 串接 Google 試算表，以 Python 清洗賽事、伺服器 Log 檔，並將分析結果以 Power BI 視覺化呈現，協助主辦方進行賽事統計與提升伺服器效能</description>
+    </item>
+    
+    <item>
       <title>於 AWS 雲端平台搭建會員帳務系統</title>
       <link>https://uuuna2233.github.io/blog/aws-billing-system/</link>
       <pubDate>Thu, 04 Aug 2022 20:00:00 +0800</pubDate>

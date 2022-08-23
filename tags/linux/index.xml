@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Una&#39;s Portfolio</title>
+    <link>https://uuuna2233.github.io/tags/linux/</link>
+    <description>Recent content in Linux on Una&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 04 Aug 2022 20:00:00 +0800</lastBuildDate><atom:link href="https://uuuna2233.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>於 AWS 雲端平台搭建會員帳務系統</title>
+      <link>https://uuuna2233.github.io/blog/aws-billing-system/</link>
+      <pubDate>Thu, 04 Aug 2022 20:00:00 +0800</pubDate>
+      
+      <guid>https://uuuna2233.github.io/blog/aws-billing-system/</guid>
+      <description>業務場景 AWS 擁有複雜度超高的計費方式，帳單報告多達 150 個欄位，不同的雲服務、產品規格、用量狀況、計價模式、生效時間等等讓人眼花撩亂 (◎.</description>
+    </item>
+    
+    <item>
+      <title>大數據相關職缺分析專題 Part 2</title>
+      <link>https://uuuna2233.github.io/blog/bigdata-job-part2/</link>
+      <pubDate>Fri, 24 Jun 2022 22:00:00 +0800</pubDate>
+      
+      <guid>https://uuuna2233.github.io/blog/bigdata-job-part2/</guid>
+      <description>員工的離職原因林林總總，只有兩點最真實：1 錢，沒給到位 2 心，委屈了</description>
+    </item>
+    
+  </channel>
+</rss>
