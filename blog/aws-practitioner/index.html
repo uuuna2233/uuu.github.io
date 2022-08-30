@@ -134,11 +134,11 @@
           
           
           <span class="border-bottom border-primary px-2 mx-0"></span>
-          <span>24 August 2022</span>
+          <span>30 August 2022</span>
           
         </div>
         
-        <img src="https://uuuna2233.github.io/images/post/AWS-Certified-Cloud-Practitioner_badge.png" class="img-fluid w-100 mb-4" alt="AWS Certified Cloud Practitioner Learning Note">
+        <img src="https://uuuna2233.github.io/images/post/post8-AWS-Certified-Cloud-Practitioner.png" class="img-fluid w-100 mb-4" alt="AWS Certified Cloud Practitioner Learning Note">
         
         <div class="content mb-5">
           <!-- raw HTML omitted -->
@@ -169,46 +169,68 @@
 </code></pre>
 </li>
 <li>
-<p>Aspects of AWS Cloud Economics (<a href="https://aws.amazon.com/tw/economics/">https://aws.amazon.com/tw/economics/</a>)</p>
-<pre><code> ◆ Server hardware costs will be reduced if the company migrates their application to EC2
+<p>Aspects of AWS Cloud Economics</p>
+<pre><code> ◆ Cost Savings (TCO): Infrastructure cost savings/ avoidance from moving to the cloud.
+ ◆ Staff Productivity: Efficiency improvement by function on a task-by-task basis.
+ ◆ Operational Resilience: Benefit of improved availability, security, and compliance.
+ ◆ Business Agility: Deploying new features/ applications faster and reducing errors
+
+ ◆ AWS pricing calculator (Cost estimate): Helps with calculating the total cost of ownership.
+ ◆ Migration Evaluator: Helps with inventorying existing environment, identifying workload information, and designing and planning AWS migration.
+ ◆ Cost Explorer: Rightsizing recommendations analyze your Amazon EC2 resources and usage to show opportunities for how you can lower your spending.
 </code></pre>
 </li>
 <li>
-<p>Cloud Architecture Design Principles (<a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/oe-design-principles.html">https://docs.aws.amazon.com/wellarchitected/latest/framework/oe-design-principles.html</a>)</p>
-<pre><code> ◆ Design for failure: Understanding what and how components fail, and how to architect around failures to add resiliency (Using at least two servers)
- ◆ Decouple components (解耦組件) vs. monolithic architecture (單體架構)： Monolithic architecture- all processes are tightly coupled or connected, and run as a single service. Decouple components- decoupled application components, then each would gain the ability to be scaled and managed based on individual needs.
+<p>Cloud Architecture Design Principles</p>
+<pre><code> ◆ Design for failure: Understanding what and how components fail, and how to architect around failures to add resiliency. (Using at least two servers)
 </code></pre>
 </li>
 </ul>
-<p><img src="../../images/post/post-8-monolithic-vs-decouple.PNG" alt="monolithic-vs-decouple"></p>
-<pre><code>   ◆ Implement elasticity in the cloud vs. on-premises: Dynamically change capacity based on demand in cloud. Saving time during setup and removes the undifferentiated heavy lifting.
+<p><img src="../../images/post/post-8-design-for-failure.PNG" alt="Design for Failure"></p>
+<pre><code>   ◆ Elasticity: is the ability of a system to grow to handle increased load.
+      1. Vertical scaling- increase in the specifications of an individual resource
+      2. Horizontal scaling- increase in the number of resources
 </code></pre>
-<p><img src="../../images/post/post-8-cloud-vs-on-premises.PNG" alt="cloud vs. on-premises"></p>
-<pre><code>   ◆ Think parallel: Serial and sequential processing are limiting, dependencies can make or break entire processes. Thinking parallel is similar to decoupling, looking at how can divide a job into its simplest form, and then distribute that load to multiple components to handle the demand.
+<p><img src="../../images/post/post-8-elasticity1.PNG" alt="Elasticity-1"></p>
+<pre><code>      Q: How can this web application be optimized by just looking at different storage options?
+      A: 1. Amazon ElastiCache is a fully managed, in-memory caching service supporting flexible, real-time use cases. You can use ElastiCache for caching, which accelerates application and database performance, or as a primary data store that don't require durability.
+         2. Amazon CloudFront is a content delivery network (CDN) service built for high performance, security, and decrease end-user latency. CloudFront speeds up content delivery by leveraging edge locations, to reduce delivery time by caching your content close to your end users. 
 </code></pre>
-<p><img src="../../images/post/post-8-think-parallel.PNG" alt="think parallel"></p>
+<p><img src="../../images/post/post-8-elasticity2.PNG" alt="Elasticity-2"></p>
+<pre><code>   ◆ Decouple components (解耦組件) vs. monolithic architecture (單體架構)： Monolithic architecture- all processes are tightly coupled or connected, and run as a single service. Decouple components- decoupled application components, then each would gain the ability to be scaled and managed based on individual needs.
+</code></pre>
+<p><img src="../../images/post/post-8-monolithic-vs-decouple.PNG" alt="Monolithic vs. Decouple"></p>
+<pre><code>   ◆ Implement elasticity in the cloud vs. on-premises: Dynamically change capacity based on demand in cloud (Elasticity、Scalable). Saving time during setup and removes the undifferentiated heavy lifting.
+</code></pre>
+<p><img src="../../images/post/post-8-cloud-vs-on-premises.PNG" alt="Cloud vs. on-Premises"></p>
+<pre><code>   ◆ Think parallel: Serial and sequential processing are limiting, dependencies can make or break entire processes. Looking at how can divide a job into its simplest form, and then distribute that load to multiple components to handle the demand. Multi-threading requests by using multiple concurrent threads will store or fetch the data faster than requesting it sequentially. Distribute the incoming requests across multiple asynchronous web servers using a load balancer
+</code></pre>
+<p><img src="../../images/post/post-8-think-parallel.PNG" alt="Think Parallel"></p>
 <ul>
 <li>
 <p>laaS, PaaS, and SaaS</p>
 <pre><code> ◆ Infrastructure as a Service (IaaS) 基礎設施即服務 (EC2、Lightsail、VPC、Direct Connect)
- ◆ Platform as a Service (PaaS) 平台即服務 (S3、Deep Learning AMI、Cloud Watch)
+ ◆ Platform as a Service (PaaS) 平台即服務 (S3、Deep Learning AMI、Cloud Watch、Elastic Beanstalk)
  ◆ Software as a Service (SaaS) 軟體即服務 (RDS、DynamoDB、Redshift、Glue、EMR、Kinesis)
 
- Q: What are the differences between Amazon EC2 and Amazon Lightsail?
- A: Amazon EC2 instances are meant for small to complex architecture. Lightsail is better for small to medium scale workloads. (https://aws.amazon.com/tw/premiumsupport/knowledge-center/lightsail-differences-from-ec2/)
-
- ◆ Infrastructure as code (IaC) 基礎設施即代碼
+ ◆ Infrastructure as code (IaC) 基礎設施即代碼- creation, deployment, and maintenance of infrastructure in a programmatic, descriptive, and declarative way.
 </code></pre>
 </li>
 </ul>
+<p><strong>AWS CDK</strong><br>
+<img src="../../images/post/post-8-cdk.PNG" alt="CDK"></p>
+<p><strong>AWS Cloud Formation</strong>
+<img src="../../images/post/post-8-cloudformation.PNG" alt="Cloud Formation"></p>
 <!-- raw HTML omitted -->
 <p><strong>Reference</strong>：<br>
 1. <a href="https://aws.amazon.com/getting-started/cloud-essentials/">AWS Fundamentals- Core Concepts</a><br>
-2. <a href="https://aws.amazon.com/executive-insights/content/business-value-on-aws/">Business Value on AWS</a>
-3. <a href=""></a><br>
-4. <a href=""></a><br>
-5. <a href=""></a><br>
-6. <a href=""></a>\</p>
+2. <a href="https://aws.amazon.com/executive-insights/content/business-value-on-aws/">Business Value on AWS</a><br>
+3. <a href="https://aws.amazon.com/tw/economics/">Cloud Economics Center</a><br>
+4. <a href="https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/aws-pricingtco-tools.html">AWS Pricing/TCO Tools</a><br>
+5. <a href="https://docs.aws.amazon.com/cost-management/latest/userguide/ce-rightsizing.html">Optimizing your cost with Rightsizing Recommendations</a><br>
+6. <a href="https://docs.aws.amazon.com/zh_tw/wellarchitected/latest/framework/general-design-principles.html">Design Principles</a><br>
+7. <a href="https://cs.wmich.edu/gupta/teaching/cs6030/6030cloudFall2019web/lectureNotes6030cloud/Architecture%20Best%20Practices%20AWS%20Presentation%20Alex%20Bodurka.pdf">Architecure Best Practices</a><br>
+8. <a href="https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/elasticache-use-cases.html">Common ElastiCache Use Cases and How ElastiCache Can Help</a></p>
 <!-- raw HTML omitted -->
 <h4 id="module-2-security-and-compliance">Module 2: Security and Compliance</h4>
 <hr>
@@ -224,24 +246,49 @@
 <ul>
 <li>
 <p>AWS Cloud Security and Compliance Concepts (<a href="https://aws.amazon.com/tw/compliance/programs/">https://aws.amazon.com/tw/compliance/programs/</a>)</p>
-<pre><code> ◆ AWS Artifact gives on-demand accedd to AWS security and compliance reports.
- ◆ Encryption
+<pre><code> ◆ AWS Artifact: provides on-demand access to AWS’ security and compliance reports and select online agreements.
+ ◆ Data Encryption:
+    1. Data at rest encryption capabilities available in most AWS services.
+    2. Dedicated, hardware-based cryptographic key storage using AWS CloudHSM
+    3. Encrypted message queues for the transmission of sensitive data using server-side encryption (SSE) for Amazon SQS
 </code></pre>
 </li>
 </ul>
 <p><img src="../../images/post/post-8-encryption.PNG" alt="Encryption"></p>
 <pre><code>   ◆ AWS Cloudwatch: is a monitoring service that monitoring data generated by resources, ex: give insight into if an overloaded EC2 or an unusually high number of requests hitting an Elastic Load Balancer.
-   ◆ AWS CloudTrail: is a service that logs AWS API calls, enables risk auditiong by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs. (紀錄帳戶所有活動)
-   ◆ AWS Config: is a service that can use to assess, audit, and evaluate the configurations of AWS resources. (只記錄對資源配置的更改)
 </code></pre>
+<p><img src="../../images/post/post-8-cloudwatch.PNG" alt="Amazon CloudWatch"></p>
+<pre><code>   ◆ AWS CloudTrail: is a service that logs AWS API calls, enables risk auditiong by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs. (紀錄帳戶所有活動)
+</code></pre>
+<p><img src="../../images/post/post-8-cloudtrail.PNG" alt="AWS CloudTrail"></p>
+<pre><code>   ◆ AWS Config: is a service that can use to assess, audit, and evaluate the configurations of AWS resources. (只記錄對資源配置的更改)
+</code></pre>
+<p><img src="../../images/post/post-8-config.PNG" alt="AWS Config"></p>
+<p><img src="../../images/post/post-8-security.PNG" alt="Security"></p>
 <ul>
 <li>
 <p>AWS Access Management Capabilities (<a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html">https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html</a>)</p>
 <pre><code> ◆ Least privilege: Only give people exactly the level of access that they need.
  ◆ Root user: has complete and unrestricted access to all resources in an AWS account, should not be using this user to carry out daily tasks in AWS. Use multi-factor authentication (MFA) for locking away root user credentials, rotating access keys and the password to protect it.
  ◆ IAM: Uses/ Groups/ Roles/ Policies
+    1. Uses: Give people the ability to sign in to the AWS Management Console for interactive tasks and to make programmatic requests to AWS services using the API or CLI.
+    2. Groups: Attach policies to multiple users at one time.
+    3. Roles: A role does not have any credentials (password or access keys) associated with it. Instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it.
+    4. Policies: Manage access in AWS, attaching them to IAM identities (users, groups of users, or roles) or AWS resources.
 </code></pre>
 </li>
+</ul>
+<p><img src="../../images/post/post-8-iam-works.png" alt="IAM-Works"></p>
+<pre><code>   Q: When to create an IAM role (instead of a user)?
+   A: 1. You're creating an application that runs on an EC2 instance and that application makes requests to AWS.
+      2. You're creating an app that runs on a mobile phone and that makes requests to AWS.
+      3. Users in your company are authenticated in your corporate network and want to be able to use AWS without having to sign in again—that is, you want to allow users to federate into AWS.
+</code></pre>
+<p><img src="../../images/post/post-8-policy-types.PNG" alt="IAM">
+<img src="../../images/post/post-8-policy-types1.PNG" alt="IAM"></p>
+<p><strong>The following flow chart provides details about how the decision is made. This flow chart does not cover the impact of resource-based policies and implicit denies in other types of policies.</strong></p>
+<p><img src="../../images/post/post-8-PolicyEvaluationHorizontal.png" alt="IAM-Policy"></p>
+<ul>
 <li>
 <p>Network Security (<a href="https://aws.amazon.com/products/security/network-application-protection/">https://aws.amazon.com/products/security/network-application-protection/</a>)</p>
 <pre><code> ◆ Security groups: are instance-level firewalls, they can allow a request based on port, protocol, and source or destination, but cannot inspect an HTTP packet.
@@ -253,35 +300,124 @@
 </code></pre>
 </li>
 </ul>
+<!-- raw HTML omitted -->
+<p><strong>Reference</strong>：<br>
+1. <a href="https://aws.amazon.com/compliance/shared-responsibility-model/">Shared Responsibility Model</a><br>
+2. <a href="https://aws.amazon.com/artifact/faq/#Compliance_Reports">AWS Artifact</a><br>
+3. <a href="https://aws.amazon.com/products/security/?nc=sn&amp;loc=2">Security, Identity, and Compliance on AWS</a><br>
+4. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html">AWS Identity and Access Management</a><br>
+5. <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege">Security best practices in IAM</a><br>
+6. <a href="https://aws.amazon.com/cloudtrail/">AWS CloudTrail</a><br>
+7. <a href="https://aws.amazon.com/cloudwatch/">Amazon CloudWatch</a><br>
+8. <a href="https://aws.amazon.com/config/">AWS Config</a><br>
+9. <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-best-practices.html">Security best practices for your VPC</a><br>
+10. <a href="https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html">Control traffic to resources using security groups</a><br>
+11. <a href="https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html">Control traffic to subnets using Network ACLs</a><br>
+12.. <a href="https://www.jannet.hk/ip-address-version-4-ipv4-zh-hant/">IPv4 &amp; Subnet Mask</a></p>
+<!-- raw HTML omitted -->
 <h4 id="module-3-technology">Module 3: Technology</h4>
 <hr>
 <!-- raw HTML omitted -->
 <ul>
 <li>
 <p>Methods of Deploying and Operating in the AWS Cloud</p>
-<pre><code> ◆ Methods to communicate to the AWS Cloud: 1. APLs and SDKs 2. AWS Command Lind Interface (CLI) 3. AWS Management Console 4. Infrastructure as code (laC)
- ◆ gatway
+<pre><code> ◆ Methods to communicate to the AWS Cloud:
+    1. APLs and SDKs 2. AWS Command Lind Interface (CLI) (ex: Linux shell、AWS CloudShell)
+    3. AWS Management Console 4. Infrastructure as code (laC) 5. Integrated Development Environments (IDE)
+
+ ◆ Amazon VPC
+    1. Network-to-Amazon VPC
+    2. Amazon VPC-to-Amazon VPC
+    3. Software remote access-to-Amazon VPC
+    4. Transit VPC
+
+ Q: Which components are requires to build a successful site-to-site VPN connection on AWS?
+ A: Customer Gateway、Virtual Private Gateway
 </code></pre>
 </li>
+</ul>
+<p><img src="../../images/post/post-8-connectVPC.png" alt="Connect VPC to other networks"></p>
+<ul>
 <li>
-<p>AWS Global Infrastructure[1]</p>
+<p>AWS Global Infrastructure</p>
 <pre><code> ◆ Availability Zones: are one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region.
  ◆ Regions: are phyical location that consists of clusters of data centers. There are many different Regions around the world, and enable the deployment of compute and storage resources globally.
  ◆ Edge Locations: Endpoints that serve cached content and provide access to AWS service.
 </code></pre>
 </li>
+</ul>
+<p><img src="../../images/post/post-8-global-infrastructure.PNG" alt="Global Infrastructure"></p>
+<ul>
 <li>
 <p>Core AWS Services</p>
-<pre><code> ◆ AWS Compute
- ◆ AWS Storage
- ◆ AWS Network
- ◆ AWS Database
- ◆ AWS Snowmobile: is specifically designed for exabyte-scale data transfer.
+<pre><code> ◆ AWS Compute:
+
+     ◎ Instances
+       1. EC2- [Instance Types](https://aws.amazon.com/ec2/instance-types/)、[Pricing](https://aws.amazon.com/ec2/pricing/)
+       2. AWS Batch- Run hundreds of thousands of batch computing jobs on AWS.
+
+     Q: What are the differences between Amazon EC2 and Amazon Lightsail?
+     A: Amazon EC2 instances are meant for small to complex architecture. Lightsail is better for small to medium scale workloads. (https://aws.amazon.com/tw/premiumsupport/knowledge-center/lightsail-differences-from-ec2/)
+
+     ◎ Containers
+       1. Amazon ECS- Container orchestration/ management service.
+       2. AWS Fargate- Run containers without having to manage servers or clusters.
+       3. Amazon ECR- Fully-managed Docker container registry that manage Docker container images.
+       4. Amazon EKS- Run the Kubernetes management infrastructure across multi-AZ to eliminate a single point of failure.
+       5. AWS App Runner- is the easiest way to run web application (including API services, backend web services, and websites) on AWS.
+
+     Q: AWS EKS vs. ECS vs. Fargate vs. Kops?
+     A: https://cast.ai/blog/aws-eks-vs-ecs-vs-fargate-where-to-manage-your-kubernetes/
+
+     ◎ Serverless
+       1. AWS Lambda- Run code without provisioning or managing servers, and set up code to automatically trigger from other AWS services.
+
+     ◎ Edge and hybrid
+       1. AWS Outposts- Run AWS infrastructure and services on premises.
+       2. AWS Snow Family- Move petabytes of data to and from AWS, or process data at the edge.
+       3. AWS Wavelength- Embeds AWS compute and storage services within 5G networks, providing mobile edge computing infrastructure for ultra-low-latency applications.
+
+     ◎ Cost and capacity management
+       1. AWS Elastic Beanstalk- Simply upload code, and AWS Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, and auto scaling to application health monitoring.
+       2. EC2 Image Builder- Keeping virtual machine (VM) and container images up-to-date
 </code></pre>
 </li>
+</ul>
+<p><img src="../../images/post/post-8-computer-service.PNG" alt="AWS Computer Service"></p>
+<pre><code>   ◆ AWS Storage:
+
+         1. Amazon Elastic Block Store (EBS)- Provides persistent block storage volumes and automatically replicated within its Availability Zone.
+         2. Amazon Elastic File System (EFS)- provides a simple, scalable, elastic file system for Linux-based workloads for use with AWS Cloud services and on-premises resources.
+         3. Amazon Simple Storage Service (S3)- is an object storage service. storage classes: S3 Intelligent-Tiering/ S3 Standard/ S3 Standard-IA/ S3 Glacier
+         4. AWS Storage Gateway- is a hybrid storage service that allows on-premises applications to seamlessly use AWS cloud storage. The gateway connects to AWS storage services.
+
+         Q: When should I use Amazon EFS vs. Amazon EBS vs. Amazon S3?
+         A: S3 is for object storage.(photos, videos, files, and simple web pages)
+            EBS is for EC2 block storage.(computer’s hard drive)
+            EFS is a file system for many EC2 instances.(multiple EC2 instances and lots of data)
+
+   ◆ Networking and Content Delivery:
+         1. Amazon API Gateway- Create an API that acts as a “front door” for applications to access data, business logic, or functionality from back-end services.
+         2. Amazon CloudFront- Securely deliver content with low latency and high transfer speeds.
+         3. Amazon Route 53- Domain Name System (DNS) web service.
+         4. Amazon VPC- Provides a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network.
+         5. AWS Direct Connect- Establishes a dedicated network connection from premises to AWS.
+         6. AWS Global Accelerator- Improves application availability by continuously monitoring the health of your application endpoints and routing traffic to the closest healthy endpoints.
+         7. AWS Transit Gateway- Connects VPCs and on-premises networks through a central hub.
+
+
+   ◆ Database:
+
+         1. Amazon Aurora- is a MySQL and PostgreSQL compatible relational database engine
+         2. Amazon DynamoDB- is a key-value and document database
+         3. Amazon ElastiCache- Retrieve information from fast, managed, in-memory caches, instead of relying entirely on slower disk-based databases. Caching engines: Redis/ Memcached
+</code></pre>
+<ul>
 <li>
 <p>AWS Technology Support</p>
-<pre><code> Support areas: 1. Documentation (whitepapers, AWS Knowledge Center, forums, blogs) 2. Account-specific support 3. AWS Partner Network (APN) and AWS Marketplace 4. AWS Trusted Advisor
+<pre><code> Support areas:
+    1. Documentation (Whitepapers, AWS Knowledge Center, Forums, Blogs) 2. Account-specific support
+    3. AWS Partner Network (APN) and AWS Marketplace 4. AWS Trusted Advisor
 
  Q: Which AWS support plan provides access to architectural and operational reviews, as well as 24/7 access to senior cloud support engineers through email, online chat, and phone?
  A: Enterprise
@@ -290,31 +426,50 @@
 </ul>
 <!-- raw HTML omitted -->
 <p><strong>Reference</strong>：<br>
-1. [1]<a href="https://aws.amazon.com/about-aws/global-infrastructure/">Global Infrastructure</a></p>
+1. <a href="https://aws.amazon.com/developer/tools/">Tools to Build on AWS</a><br>
+2. <a href="https://aws.amazon.com/about-aws/global-infrastructure/">Global Infrastructure</a><br>
+3. <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/introduction.html">Amazon Virtual Private Cloud Connectivity Options</a><br>
+4. <a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-web-services-cloud-platform.html">Amazon Web Services Cloud</a><br>
+5. <a href="https://www.ithome.com.tw/news/91847">10個Q&amp;A快速認識Docker</a><br>
+6. <a href="https://www.ithome.com.tw/article/129426">剖析容器的資安風險與防護</a><br>
+7. <a href="https://www.youtube.com/playlist?list=PLliocbKHJNwvV4yfH-_EiSCU8LpmfBUZ7">AWS ECS 容器编排服务应用开发中文入门教学</a><br>
+8. <a href="https://www.kx.com.tw/bi-jiaoamazon-ebsefs-hes3-wei-nin-de-qi-ye-xuan-ze-zui-jia-deaws-cun-chu-fu-wu/">比較Amazon EBS. EFS. S3：為您的企業選擇最佳的AWS存儲服務</a><br>
+9. <a href="https://digitalcloud.training/amazon-s3-vs-ebs-vs-efs-comparing-aws-storage-services/">Amazon S3 vs EBS vs EFS</a><br>
+10. <a href="https://aws.amazon.com/premiumsupport/plans/">Compare AWS Support Plans</a></p>
+<!-- raw HTML omitted -->
 <h4 id="module-4-billing-and-pricing">Module 4: Billing and Pricing</h4>
 <hr>
 <!-- raw HTML omitted -->
-<p>Compare and contrast the various pricing models for AWS (for example, On-Demand Instances, Reserved Instances, and Spot Instance pricing)</p>
-<pre><code>   Identify scenarios or the best fit for On-Demand Instance pricing
-   Identify scenarios or the best fit for Reserved Instance pricing
-   Identify scenarios or the best fit for Spot Instance pricing
-   Question walkthrough
+<ul>
+<li>
+<p>Pricing Models</p>
+<pre><code> Q: A company has an application that only needs to run for 2 hours AT ANY TIME during a day. Which EC2 type will be MOST cost-effective for this application?
+ A: Spot Instances
 </code></pre>
-<p>Recognize the various account structures in relation to AWS billing and pricing</p>
-<pre><code>   Recognize that consolidated billing is a feature of AWS Organizations
-   Identify how multiple accounts aid in allocating costs across departments
-   Question walkthrough
+</li>
+</ul>
+<p><img src="../../images/post/post-8-pricing1.PNG" alt="Pricing Models-1">
+<img src="../../images/post/post-8-pricing2.PNG" alt="Pricing Models-2">
+<img src="../../images/post/post-8-pricing3.PNG" alt="Pricing Models-3"></p>
+<ul>
+<li>
+<p>Various Account Structures</p>
+<pre><code> AWS Organizations: 1. Centralized management of all of your AWS accounts. 2. Consolidated billing for all member accounts
 </code></pre>
+</li>
+</ul>
 <p>Identify resources available for billing support</p>
 <pre><code>   ◆ AWS Cost Explorer: is an interface located in the AWS Mangement Console, and gives a way to visualize and manage costs in a granular way. (by month, service, tag...)
    ◆ AWS Cost and Usage Report: contains the most comprehensive set of AWS cost and usage data available.
    ◆ Amazon QuickSight: is a Data-visualization tool to analyze AWS usage and costs, or to create custom reports.
    ◆ AWS Simple Monthly Calculator: Estimate how much bill will be based on usage projections.
-   
-   alarms and alerts
+   ◆ AWS Budgets: Alerted by email or SNS notification when actual or forecasted cost and usage exceed your budget threshold, or when your actual RI and Savings Plans' utilization or coverage drops below your desired threshold.  
 </code></pre>
+<!-- raw HTML omitted -->
 <p><strong>Reference</strong>：<br>
-1. <a href="https://aws.amazon.com/tw/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a></p>
+1. <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html">What is AWS Organizations?</a><br>
+2. <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html">Instance purchasing options</a><br>
+3. <a href="https://aws.amazon.com/tw/certification/certified-cloud-practitioner/">AWS Certified Cloud Practitioner</a></p>
 
         </div>
 
